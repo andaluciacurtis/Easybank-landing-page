@@ -44,6 +44,7 @@ h4 {
 p {
   font-size: 18px;
   margin: 10px 0px;
+  color: var(--grayish-blue);
 }
 
 a {
@@ -66,14 +67,24 @@ button {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 40px;
   position: relative;
   z-index: 2;
   background-color: white;
 }
 
+header img {
+  align-self: center;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
 nav a {
-  color: black;
+  color: var(--grayish-blue);
 }
 
 .intro-container {
@@ -83,15 +94,21 @@ nav a {
   align-items: center;
 
   gap: 20px;
+  max-width: 1200px;
 }
 
 .image-container {
   background-image: url("images/bg-intro-desktop.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 50%;
+  background-size: 1000px;
+  background-position-y: -150px; 
+  background-position-x: -30px; 
+
+  width: 60%;
   position: relative;
   height: 500px;
+  display: flex;
+  justify-content: end;
 }
 
 .image-container img {
@@ -102,7 +119,7 @@ nav a {
 }
 
 .intro-text-container {
-  width: 50%;
+  width: 40%;
   padding: 50px;
 }
 
