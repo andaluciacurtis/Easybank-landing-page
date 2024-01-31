@@ -125,6 +125,14 @@ nav a {
   padding: 50px;
 }
 
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  justify-content: center;
+  margin: auto;
+}
+
 .why-container {
   background-color: var(--light-grayish-blue);
   padding: 70px 60px 60px 60px;
@@ -149,7 +157,7 @@ nav a {
 
 .article-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 30px;
   gap: 10px;
 }
@@ -157,10 +165,11 @@ nav a {
 .article {
   background-color: var(--white);
   width: 23%;
+  max-width: 250px;
 }
 
 .article-img {
-  height: 130px;
+  height: 140px;
   overflow: hidden;
   display: flex;
   align-items: center;
