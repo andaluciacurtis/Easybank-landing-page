@@ -190,9 +190,22 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 20px 30px;
+  align-items: center;
 }
 
 .bottom-nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 10px 40px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
 }
