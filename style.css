@@ -80,7 +80,46 @@ header img {
   background-image: linear-gradient(var(--light-grayish-blue), var(--white));
 }
 
+.intro-container button {
+  margin-bottom: 20px;
+}
 
+.why-container {
+  background-color: var(--light-grayish-blue);
+  padding: 70px 60px 60px 60px;
+}
+
+.reason {
+  padding: 30px;
+}
+  
+.reason h3 {
+  padding: 10px 0;
+}
+
+.latest-articles-container {
+  padding: 50px;
+  background-image: linear-gradient(var(--white), var(--light-grayish-blue));
+}
+
+.article-container {
+  padding-top: 30px;
+  gap: 10px;
+  display: flex;
+}
+
+.article {
+  background-color: var(--white);
+}
+
+.article-text {
+  padding: 15px;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  color: white;
+}
 
 @media (max-width: 649px) {
   header {
@@ -148,9 +187,44 @@ header img {
     width: min(95%, 500px);
     margin: auto;
   }
+
+  .why-container {
+    text-align: center;
+  }
+
+  .article-container {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+
+  .article-img img {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 100px;
+  }
+
+  .social-links {
+    padding: 20px 0 20px 0;
+  }
+
+  .bottom-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: 840px) {
+  .header-outer-container {
+    width: 100%;
+    background-color: white;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -158,6 +232,8 @@ header img {
     padding: 10px 40px;
     width: 100%;
     background-color: white;
+    max-width: 1400px;
+    margin: auto;
   }
   
   nav {
@@ -208,33 +284,12 @@ header img {
     margin: auto;
   }
   
-  .why-container {
-    background-color: var(--light-grayish-blue);
-    padding: 70px 60px 60px 60px;
-  }
-  
   .reasons-container {
     display: flex;
   }
   
-  .reason {
-    padding: 30px;
-  }
-  
-  .reason h3 {
-    padding: 10px 0;
-  }
-  
-  .latest-articles-container {
-    padding: 50px;
-    background-image: linear-gradient(var(--white), var(--light-grayish-blue));
-  }
-  
   .article-container {
-    display: flex;
     justify-content: space-between;
-    padding-top: 30px;
-    gap: 10px;
   }
   
   .article {
@@ -254,18 +309,19 @@ header img {
   .article-img img {
     width: 120%;
   }
-  
-  .article-text {
-    padding: 15px;
+
+  .footer-outer-container {
+    width: 100%;
+    background-color: var(--dark-blue);
   }
   
   footer {
-    background-color: var(--dark-blue);
-    color: white;
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
     align-items: center;
+    padding: 20px 40px;
+    max-width: 1400px;
+    margin: auto;
   }
   
   .bottom-nav {
