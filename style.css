@@ -131,7 +131,24 @@ footer {
   }
 
   nav {
-    display: none;
+    position: absolute;
+    top: 70px;
+    width: 85%;
+    padding: 25px;
+    margin: auto;
+    border-radius: 5px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  nav a {
+    color: black;
+    font-size: 23px;
   }
 
   header button {
