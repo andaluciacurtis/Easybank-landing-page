@@ -60,6 +60,11 @@ button {
   color: white;
   font-weight: 700;
   padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, hsl(136, 60%, 70%), hsl(192, 70%, 70%));
 }
 
 /* ELEMENTS */
@@ -112,6 +117,14 @@ header img {
   background-color: var(--white);
 }
 
+.article h3 {
+  cursor: pointer;
+}
+
+.article h3:hover {
+  color: var(--lime-green);
+}
+
 .article-text {
   padding: 15px;
 }
@@ -119,6 +132,10 @@ header img {
 footer {
   background-color: var(--dark-blue);
   color: white;
+}
+
+footer a:hover {
+  color: var(--lime-green);
 }
 
 @media (max-width: 649px) {
@@ -164,6 +181,10 @@ footer {
     display: none;
   }
 
+  nav a:hover {
+    color: var(--lime-green);
+  }
+
   .nav-shadow {
     width: 100%;
     height: 100%;
@@ -207,10 +228,33 @@ footer {
 
   nav a {
     color: var(--grayish-blue);
+    position: relative;
   }
 
   header button {
     display: block;
+  }
+
+  nav a:hover {
+    color: var(--dark-blue);
+  }
+
+  nav a::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: var(--lime-green);
+    position: absolute;
+
+    left: 0;
+    bottom: -20px;
+
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  nav a:hover::after {
+    transform: scaleX(1);
   }
 }
 
